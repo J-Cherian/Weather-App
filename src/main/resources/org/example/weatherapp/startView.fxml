@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.weatherapp.startViewController">
     <children>
-        <Label alignment="CENTER" layoutX="214.0" layoutY="87.0" text="Enter City Name">
+        <Label alignment="CENTER" layoutX="214.0" layoutY="94.0" text="Enter City Name">
             <font>
                 <Font size="24.0" />
             </font>
@@ -16,7 +16,6 @@
 
         <TextField fx:id="cityTextField" layoutX="150.0" layoutY="168.0" prefHeight="40.0" prefWidth="300.0" promptText="City Name" />
 
-        <Button layoutX="225.0" layoutY="249.0" onAction="#enterCity" prefHeight="40.0" prefWidth="150.0" text="Submit" />
+        <Button layoutX="225.0" layoutY="249.0" onAction="#enterCity" prefHeight="35.0" prefWidth="150.0" text="Submit" />
     </children>
 </AnchorPane>
-
