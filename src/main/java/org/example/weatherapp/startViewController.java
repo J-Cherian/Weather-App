@@ -41,7 +41,7 @@ public class startViewController {
 
         // Add your OpenWeather API key here. Replace with your actual API key.
         // You need to make an account at https://openweathermap.org to get an API key.
-        String apiId = "2a333a5ceb43fa33c5de26331a6fd4dd";
+        String apiId = "";
 
         // Check if the API key is missing or invalid
         if (apiId == null || apiId.isEmpty()) {
