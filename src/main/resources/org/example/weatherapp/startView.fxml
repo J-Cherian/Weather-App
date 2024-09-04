@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.weatherapp.startViewController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.weatherapp.startViewController">
+    <children>
+
+         <!-- Label to prompt user to enter city -->
+         <Label alignment="CENTER" layoutX="214.0" layoutY="87.0" text="Enter City Name">
+             <font>
+                 <Font size="24.0" />
+             </font>
+         </Label>
+
+         <!-- TextField for entering the city name -->
+         <TextField fx:id="cityTextField" layoutX="150.0" layoutY="168.0" prefHeight="40.0" prefWidth="300.0" promptText="City Name" />
+
+         <!-- Button to submit and trigger enterCity method -->
+         <Button layoutX="225.0" layoutY="249.0" onAction="#enterCity" prefHeight="40.0" prefWidth="150.0" text="Submit" />
+    </children>
+</AnchorPane>
