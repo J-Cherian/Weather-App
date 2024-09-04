@@ -1,0 +1,47 @@
+/* CSS for second view */
+
+/* Night gradient background */
+.night-gradient {
+    -fx-background-color: linear-gradient(
+            from 0% 0% to 0% 100%,
+            #2F2D64 0%,
+            #4554B7 50%,
+            #6A4097 100%
+    );
+}
+
+/* Day gradient background */
+.day-gradient {
+    -fx-background-color: linear-gradient(
+            from 0% 0% to 0% 100%,
+            #87CEFA 50%,
+            #00BFFF 100%,
+            #FFFFFF 50%
+    );
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+/* css for button */
+.transparent-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;    /
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.transparent-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: white;
+}
+
+.transparent-button:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-border-color: white;
+}

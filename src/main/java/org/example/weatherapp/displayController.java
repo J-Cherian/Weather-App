@@ -82,7 +82,10 @@ public class displayController {
     private void displayWeatherImage(String weatherDescription, String iconCode) {
         String imagePath = "";
         weatherDescription = weatherDescription.toLowerCase();
-        boolean isNight = iconCode.endsWith("n"); // determines if its night or day
+        boolean isNight = iconCode.endsWith("n");
+        // sets the background
+        setGradientBasedOnTime(isNight);
+
 
         // matches the correct image based on weather condition
         if (weatherDescription.contains("clouds")) {
@@ -110,6 +113,15 @@ public class displayController {
             }
         } catch (Exception e) {
             System.out.println("Error loading image: " + e.getMessage());
+        }
+    }
+
+    // method to set the background using css
+    public void setGradientBasedOnTime(boolean isNight) {
+        if (isNight) {
+            myPane.getStyleClass().add("night-gradient");
+        } else {
+            myPane.getStyleClass().add("day-gradient");
         }
     }
 
